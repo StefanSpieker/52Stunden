@@ -1,0 +1,11 @@
+body {
+  background-color: lightgrey;
+}
+h1 {
+  color: red;
+}
+p {
+  font-family: arial;
+  font-size: 1.2em;
+  text-indent: 2em;
+}
