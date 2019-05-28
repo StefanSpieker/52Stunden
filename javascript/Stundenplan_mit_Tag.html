@@ -1,120 +1,61 @@
 <!doctype html>
 <html>
-
-
     <head>
-
         <meta charset="utf-8">
-
         <title>JavaScript: Hallo Welt</title>
-
     </head>
-
-
     <body>
-
         <p>Heute ist <div id="day">Tag</div></p>
         <table>
-
             <tr>
-
                 <td>Stunde</td>
-
                 <td>Montag</td>
-
                 <td>Dienstag</td>
-
                 <td>Mittwoch</td>
-
                 <td>Donnerstag</td>
-
                 <td>Freitag</td>
-
             </tr>
-
             <tr>
-
                 <td>1.+2.</td>
-
                 <td>Sport</td>
-
                 <td>Englisch</td>
-
                 <td>Physik</td>
-
                 <td>Englisch</td>
-
                 <td>Erdkunde</td>
-
             </tr>
-
             <tr>
-
                 <td>3.+4.</td>
-
                 <td>Mathe</td>
-
                 <td>Bio/Chemie</td>
-
                 <td>Ethik/Reli</td>
-
                 <td>Geschichte</td>
-
                 <td>Kunst</td>
-
             </tr>
-
             <tr>
-
                 <td>5.+6.</td>
-
                 <td>Deutsch</td>
-
                 <td>-</td>
-
                 <td>Deutsch</td>
-
                 <td>Mathe</td>
-
                 <td>IT</td>
-
             </tr>
-
         </table>
-
     </body>
-
-         <script>
-
+        <script>
             // get a new date (locale machine date time)
-
             var date = new Date();
-
             // get the date as a string
-
             var options = {
-
                 weekday: 'long',
-
                 year: 'numeric',
-
                 month: 'long',
-
                 day: 'numeric'
-
             };
-
             var n = date.toLocaleDateString('de-DE', options);
-
             // log the date in the browser console
-
             console.log('Datum:', n);
-
             // find the html element with the id of day
             // set the innerHTML of that element to the day
-
             document.getElementById("day").innerHTML = n;
-
         </script>
-
 </html>
