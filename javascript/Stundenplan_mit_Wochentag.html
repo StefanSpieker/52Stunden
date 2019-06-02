@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript: Hallo Welt</title>
+    </head>
+    <body>
+        <p id="Wochentag">Hier erscheint der Wochentag</p>
+        <table>
+            <tr>
+                <td>Stunde</td>
+                <td>Montag</td>
+                <td>Dienstag</td>
+                <td>Mittwoch</td>
+                <td>Donnerstag</td>
+                <td>Freitag</td>
+            </tr>
+            <tr>
+                <td>1.+2.</td>
+                <td>Sport</td>
+                <td>Englisch</td>
+                <td>Physik</td>
+                <td>Englisch</td>
+                <td>Erdkunde</td>
+            </tr>
+            <tr>
+                <td>3.+4.</td>
+                <td>Mathe</td>
+                <td>Bio/Chemie</td>
+                <td>Ethik/Reli</td>
+                <td>Geschichte</td>
+                <td>Kunst</td>
+            </tr>
+            <tr>
+                <td>5.+6.</td>
+                <td>Deutsch</td>
+                <td>-</td>
+                <td>Deutsch</td>
+                <td>Mathe</td>
+                <td>IT</td>
+            </tr>
+        </table>
+    </body>
+        <script>
+            // Schreiben des Datums in die Variable datum
+            var datum = new Date();
+            // Bestimmung des Wochentags als Zahl
+            wochentagZahl = datum.getDay();
+            // Wochentag als Zeichenkette bestimmen
+            wochentage = ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag' ];
+            wochentag = wochentage[wochentagZahl];
+            // den Wochentag in der Konsole des Browsers ausgeben
+            console.log('Datum:', wochentag );
+            // Finden des HTML Elements mit der Id Wochentag
+            // Setzen des Inhaltes des HTML-Elements auf eine Zeichenkette die die Variable wochentag beinhaltet
+            document.getElementById("Wochentag").innerHTML = "Heute ist " + wochentag;
+        </script>
+</html>
