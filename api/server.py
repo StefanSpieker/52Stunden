@@ -7,7 +7,7 @@ api = Flask(__name__)
 
 
 @api.route('/verzeichnis', methods=['GET'])
-def get_companies():
+def get_verzeichnis():
     return json.dumps(verzeichnis)
 
 
