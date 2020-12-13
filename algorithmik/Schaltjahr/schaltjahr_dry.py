@@ -16,10 +16,10 @@ schaltjahr = False
 if jahr % 4 == 0:
     if jahr % 100 == 0:
         if jahr % 400 == 0:
-            schaltjahr = False
+            schaltjahr = True
         else:
             # nicht durch 400 teilbar.
-            schaltjahr = True
+            schaltjahr = False
     else:
         # nicht durch 100 teilbar.
         schaltjahr = True

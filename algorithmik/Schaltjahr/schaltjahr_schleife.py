@@ -13,10 +13,10 @@ def ist_schaltjahr(jahreszahl):
     if jahreszahl % 4 == 0:
         if jahreszahl % 100 == 0:
             if jahreszahl % 400 == 0:
-                schaltjahr = False
+                schaltjahr = True
             else:
                 # nicht durch 400 teilbar.
-                schaltjahr = True
+                schaltjahr = False
         else:
             # nicht durch 100 teilbar.
             schaltjahr = True

@@ -15,10 +15,10 @@ else:
 if jahr % 4 == 0:
     if jahr % 100 == 0:
         if jahr % 400 == 0:
-            print("Kein Schaltjahr!")
+            print("Es ist ein Schaltjahr!")
         else:
             # nicht durch 400 teilbar.
-            print("Es ist ein Schaltjahr!")
+            print("Kein Schaltjahr!")
     else:
         # nicht durch 100 teilbar.
         print("Es ist ein Schaltjahr!")
